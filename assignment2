@@ -1,0 +1,151 @@
+#1
+
+def student_info(name,age,course):
+    print("Name:", name)
+    print("Age:", age)
+    print("Course:", course)
+
+print(student_info("Chanchal", 16, "Computer Science"))
+
+#2
+
+def employee_info(name, age, department):
+    print("Name:", name)
+    print("Age:", age)
+    print("Department:", department)
+
+print(employee_info("Chanchal", 16, "IT"))
+
+#3
+
+def book_details(title,author,price):
+    print("Title:", title)
+    print("Author:", author)
+    print("Price:", price)
+
+print(book_details("Python Programming", "Chanchal", "$29.99"))
+
+#4 
+
+def laptop_details(brand,model,ram,storage):
+    print("Brand:", brand)
+    print("Model:", model)
+    print("RAM:", ram)
+    print("Storage:", storage)
+
+print(laptop_details("HP", "Victus", "16GB", "512GB SSD"))
+
+#5
+
+def product_details(name,category,price):
+    print("Name:", name)
+    print("Category:", category)
+    print("Price:", price)
+
+print(product_details("Laptop", "Electronics", "$699"))
+
+#6
+ 
+def course_details(course_name,duration,mode):
+    print("Course Name:", course_name)
+    print("Duration:", duration)
+    print("Mode:", mode)
+
+print(course_details("Python Programming", "3 months", "Online"))
+
+#7
+
+def student_info1(name,course="Python"):
+    print("Name:", name)
+    print("Course:", course)
+
+print(student_info1("Chanchal"))
+print(student_info1("Chanchal", "Java"))
+
+#8 
+
+def employee_info1(name,department="IT",experience=2):
+    print("Name:", name)
+    print("Department:", department)
+    print("Experience:", experience)
+
+print(employee_info1("Chanchal"))
+print(employee_info1("Chanchal", "HR", 5))
+
+#9
+
+def book_details1(title,author,language="English"):
+    print("Title:", title)
+    print("Author:", author)
+    print("Language:", language)
+
+print(book_details1("Python Programming", "Chanchal"))
+print(book_details1("Python Programming", "Chanchal", "Hindi"))
+
+#10
+
+def student():
+    name = "Chanchal"
+    return name
+
+print(student())
+
+#11
+
+def employee():
+    salary = 10000000
+    return salary
+
+print(employee())
+
+#12
+
+def calculate_grade(marks):
+    if marks >= 75:
+        grade = "A"
+    elif marks >= 60:
+        grade = "B"
+    elif marks >= 40:
+        grade = "C"
+    else:
+        grade = "F"
+
+    return grade
+
+print(calculate_grade(45))
+
+#13
+
+company_name = "Tech Solutions"
+def display_employee(name):
+    print("Company Name:", company_name)
+    print("Employee Name:", name)
+
+display_employee("Chanchal")
+
+#14
+
+passing_marks = 40
+def check_result(marks):
+    if marks >= passing_marks:
+        result = "Pass"
+    else:
+        result = "Fail"
+
+    return result
+
+print(check_result(35))
+
+#15
+
+college_name = "ABC College"
+def display_college():
+    print("College Name:", college_name)
+
+def change_college():
+    global college_name
+    college_name = "XYZ University"
+
+display_college()
+change_college()
+display_college()
